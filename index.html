@@ -3,13 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Sonus Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center center;
+            z-index: -1;
+        }
+
+        .gradient-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+            z-index: 0;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 10em; /* Adjusted the font size */
+        }
+    </style>
 </head>
-<body style="background-image: url('background.png'); background-size: cover; background-repeat: no-repeat; background-position: center; text-align: center; font-family: Arial, sans-serif; height: 100vh; display: flex; align-items: center; justify-content: center;">
-    <!-- Your content here -->
-    <div style="background-color: rgba(255, 255, 255, 0.6); padding: 20px; border-radius: 10px;">
-        <h1>Sonus.Club</h1>
+<body>
+    <div class="background-image"></div>
+    <div class="gradient-overlay"></div>
+    <div class="content">
+        Sonus.Club
     </div>
 </body>
 </html>
-
